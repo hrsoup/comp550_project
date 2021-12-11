@@ -8,6 +8,13 @@ We use a single GPU (NVIDIA GeForce MX250) to develop this system with:
 
 GPU is optinal for running the system.
 
+If you have installed Anaconda 3, you can use the following bash code to create conda environment and install all the packages needed in this system:
+
+```bash
+conda create -n sentence_segmentation python=3.7
+source activate sentence_segmentation
+TODO
+```
 
 ## Usage
 
