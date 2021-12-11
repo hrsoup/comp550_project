@@ -34,3 +34,7 @@ python main.py Music_Language
 ```bash
 python main.py Language
 ```
+
+## Results
+
+Some output examples are shown in `result_1.txt`.
