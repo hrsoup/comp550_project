@@ -11,15 +11,18 @@ GPU is optinal for running the system.
 
 ## Usage
 
-- A run would be something like:
+(1) Using shuffled music data to pretrain, language data to finetune.
 
 ```bash
 python main.py RandomMusic_Language
 ```
 
+(2) Using correct music data to pretrain, language data to finetune.
 ```bash
 python main.py Music_Language
 ```
+
+(3) Only using language data to train.
 
 ```bash
 python main.py Language
