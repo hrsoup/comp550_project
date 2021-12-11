@@ -6,7 +6,7 @@ We use a single GPU (NVIDIA GeForce MX250) to develop this system with:
 - Anaconda 3 (python 3.7)
 - torch 1.10.0+cu113
 
-GPU is optinal for running the system.
+GPU is optinal for running this system.
 
 If you have installed Anaconda 3, you can use the following bash code to create conda environment and install all the packages needed in this system:
 
