@@ -1,0 +1,353 @@
+(0) full language:
+python .\main.py Language
+The length of music data is 6037
+The length of language data is 6000
+Experiment 0: Only using language data to train
+Epoch: 1, Valid Loss:1.9505
+Epoch: 2, Valid Loss:1.5650
+Epoch: 3, Valid Loss:1.3706
+Epoch: 4, Valid Loss:1.3254
+Epoch: 5, Valid Loss:1.2991
+Epoch: 6, Valid Loss:1.3408
+Epoch: 7, Valid Loss:1.3360
+Epoch: 8, Valid Loss:1.4048
+Epoch: 9, Valid Loss:1.4843
+Epoch: 10, Valid Loss:1.6385
+Epoch: 11, Valid Loss:1.7353
+Epoch: 12, Valid Loss:1.9641
+Epoch: 13, Valid Loss:2.2230
+Epoch: 14, Valid Loss:2.3570
+Epoch: 15, Valid Loss:2.4687
+Epoch: 17, Valid Loss:2.6810
+Epoch: 18, Valid Loss:2.7466
+Epoch: 19, Valid Loss:2.8987
+Epoch: 20, Valid Loss:2.8956
+The f1-score is 0.5961593579822299
+The confusion matrix is
+ [[23227   359]
+ [ 1050  1040]]
+
+(1) shuffled: pitch + duration
+python .\main.py RandomMusic_Language
+The length of music data is 6037
+The length of language data is 6000
+Experiment 5: Using shuffled music data to pretrain and language data to finetune
+Begin to pretrain
+Epoch: 1, Valid Loss:3.3292
+Epoch: 2, Valid Loss:3.1150
+Epoch: 3, Valid Loss:2.9792
+Epoch: 4, Valid Loss:2.9439
+Epoch: 5, Valid Loss:2.9471
+Epoch: 6, Valid Loss:2.9407
+Epoch: 7, Valid Loss:2.9375
+Epoch: 8, Valid Loss:2.9325
+Epoch: 9, Valid Loss:2.9510
+Epoch: 10, Valid Loss:2.9634
+Epoch: 11, Valid Loss:2.9679
+Epoch: 12, Valid Loss:3.0064
+Epoch: 13, Valid Loss:3.0153
+Epoch: 14, Valid Loss:3.0267
+Epoch: 15, Valid Loss:3.0303
+Epoch: 16, Valid Loss:3.1167
+Epoch: 17, Valid Loss:3.1583
+Epoch: 18, Valid Loss:3.2265
+Epoch: 19, Valid Loss:3.3517
+Epoch: 20, Valid Loss:3.3510
+Begin to finetune
+Epoch: 1, Valid Loss:2.4438
+Epoch: 2, Valid Loss:2.2737
+Epoch: 3, Valid Loss:2.1670
+Epoch: 4, Valid Loss:2.0874
+Epoch: 5, Valid Loss:2.0433
+Epoch: 6, Valid Loss:1.9584
+Epoch: 7, Valid Loss:1.8858
+Epoch: 8, Valid Loss:1.8745
+Epoch: 9, Valid Loss:1.7851
+Epoch: 10, Valid Loss:1.7988
+Epoch: 11, Valid Loss:1.7704
+Epoch: 12, Valid Loss:1.7421
+Epoch: 13, Valid Loss:1.7317
+Epoch: 14, Valid Loss:1.7134
+Epoch: 15, Valid Loss:1.6999
+Epoch: 16, Valid Loss:1.6895
+Epoch: 17, Valid Loss:1.6875
+Epoch: 18, Valid Loss:1.6654
+Epoch: 19, Valid Loss:1.6351
+Epoch: 20, Valid Loss:1.6397
+Epoch: 21, Valid Loss:1.6446
+Epoch: 22, Valid Loss:1.6275
+Epoch: 23, Valid Loss:1.6143
+Epoch: 24, Valid Loss:1.6180
+Epoch: 25, Valid Loss:1.6071
+Epoch: 26, Valid Loss:1.6207
+Epoch: 27, Valid Loss:1.5918
+Epoch: 28, Valid Loss:1.5952
+Epoch: 29, Valid Loss:1.5951
+Epoch: 30, Valid Loss:1.5883
+Epoch: 31, Valid Loss:1.5923
+Epoch: 32, Valid Loss:1.5785
+Epoch: 33, Valid Loss:1.5606
+Epoch: 34, Valid Loss:1.5588
+Epoch: 35, Valid Loss:1.5476
+Epoch: 36, Valid Loss:1.5656
+Epoch: 37, Valid Loss:1.5907
+Epoch: 38, Valid Loss:1.5655
+Epoch: 39, Valid Loss:1.5431
+Epoch: 40, Valid Loss:1.5560
+Epoch: 41, Valid Loss:1.5524
+Epoch: 42, Valid Loss:1.5455
+Epoch: 43, Valid Loss:1.5373
+Epoch: 44, Valid Loss:1.5287
+Epoch: 45, Valid Loss:1.5551
+Epoch: 47, Valid Loss:1.5306
+Epoch: 48, Valid Loss:1.5619
+Epoch: 49, Valid Loss:1.5462
+Epoch: 50, Valid Loss:1.5367
+The f1-score is 0.47194831689901395
+The confusion matrix is
+ [[23429   157]
+ [ 1396   694]]
+
+(2) in order: pitch + duration
+python .\main.py Music_Language
+The length of music data is 6037
+The length of language data is 6000
+Experiment 4: Using music data to pretrain and language data to finetune
+Begin to pretrain
+Epoch: 1, Valid Loss:2.3944
+Epoch: 2, Valid Loss:1.7416
+Epoch: 3, Valid Loss:1.6309
+Epoch: 4, Valid Loss:1.5374
+Epoch: 5, Valid Loss:1.5175
+Epoch: 6, Valid Loss:1.4723
+Epoch: 7, Valid Loss:1.5184
+Epoch: 8, Valid Loss:1.4569
+Epoch: 9, Valid Loss:1.5067
+Epoch: 10, Valid Loss:1.5285
+Epoch: 11, Valid Loss:1.5715
+Epoch: 12, Valid Loss:1.5796
+Epoch: 13, Valid Loss:1.6331
+Epoch: 14, Valid Loss:1.7001
+Epoch: 15, Valid Loss:1.7533
+Epoch: 16, Valid Loss:1.8492
+Epoch: 17, Valid Loss:1.8664
+Epoch: 18, Valid Loss:2.0464
+Epoch: 19, Valid Loss:2.1070
+Epoch: 20, Valid Loss:2.2083
+Begin to finetune
+Epoch: 1, Valid Loss:3.2978
+Epoch: 2, Valid Loss:2.8245
+Epoch: 3, Valid Loss:2.5103
+Epoch: 4, Valid Loss:2.3123
+Epoch: 5, Valid Loss:2.1724
+Epoch: 6, Valid Loss:2.0577
+Epoch: 7, Valid Loss:1.9682
+Epoch: 8, Valid Loss:1.8851
+Epoch: 9, Valid Loss:1.8675
+Epoch: 10, Valid Loss:1.7984
+Epoch: 11, Valid Loss:1.7709
+Epoch: 12, Valid Loss:1.7304
+Epoch: 13, Valid Loss:1.7200
+Epoch: 14, Valid Loss:1.6922
+Epoch: 15, Valid Loss:1.6812
+Epoch: 16, Valid Loss:1.6656
+Epoch: 17, Valid Loss:1.6491
+Epoch: 18, Valid Loss:1.6315
+Epoch: 19, Valid Loss:1.6350
+Epoch: 20, Valid Loss:1.5982
+Epoch: 21, Valid Loss:1.6421
+Epoch: 22, Valid Loss:1.6073
+Epoch: 23, Valid Loss:1.6238
+Epoch: 24, Valid Loss:1.5919
+Epoch: 25, Valid Loss:1.5702
+Epoch: 26, Valid Loss:1.5792
+Epoch: 27, Valid Loss:1.5947
+Epoch: 28, Valid Loss:1.5890
+Epoch: 29, Valid Loss:1.5773
+Epoch: 30, Valid Loss:1.5555
+Epoch: 31, Valid Loss:1.5822
+Epoch: 32, Valid Loss:1.5586
+Epoch: 33, Valid Loss:1.5917
+Epoch: 34, Valid Loss:1.5780
+Epoch: 35, Valid Loss:1.5670
+Epoch: 36, Valid Loss:1.5631
+Epoch: 37, Valid Loss:1.5805
+Epoch: 38, Valid Loss:1.6053
+Epoch: 39, Valid Loss:1.5800
+Epoch: 40, Valid Loss:1.5957
+Epoch: 41, Valid Loss:1.5895
+Epoch: 42, Valid Loss:1.5875
+Epoch: 44, Valid Loss:1.6041
+Epoch: 45, Valid Loss:1.6440
+Epoch: 46, Valid Loss:1.5988
+Epoch: 47, Valid Loss:1.5803
+Epoch: 48, Valid Loss:1.5705
+Epoch: 49, Valid Loss:1.5719
+Epoch: 50, Valid Loss:1.5651
+The f1-score is 0.5382022471910113
+The confusion matrix is
+ [[23074   512]
+ [ 1132   958]]
+
+(3) pitch:
+ python .\main.py Music_Language
+The length of music data is 6037
+The length of language data is 6000
+Experiment 4: Using music data to pretrain and language data to finetune
+Begin to pretrain
+Epoch: 1, Valid Loss:2.1592
+Epoch: 2, Valid Loss:1.8933
+Epoch: 3, Valid Loss:1.7895
+Epoch: 4, Valid Loss:1.7629
+Epoch: 5, Valid Loss:1.7551
+Epoch: 6, Valid Loss:1.7706
+Epoch: 7, Valid Loss:1.7241
+Epoch: 8, Valid Loss:1.7381
+Epoch: 9, Valid Loss:1.7189
+Epoch: 10, Valid Loss:1.7174
+Epoch: 11, Valid Loss:1.7148
+Epoch: 12, Valid Loss:1.7011
+Epoch: 13, Valid Loss:1.7337
+Epoch: 14, Valid Loss:1.6966
+Epoch: 15, Valid Loss:1.7568
+Epoch: 16, Valid Loss:1.7529
+Epoch: 17, Valid Loss:1.7203
+Epoch: 18, Valid Loss:1.7761
+Epoch: 19, Valid Loss:1.7915
+Epoch: 20, Valid Loss:1.8124
+Begin to finetune
+Epoch: 1, Valid Loss:4.4338
+Epoch: 2, Valid Loss:3.7874
+Epoch: 3, Valid Loss:3.3860
+Epoch: 4, Valid Loss:3.0831
+Epoch: 5, Valid Loss:2.8458
+Epoch: 6, Valid Loss:2.6302
+Epoch: 7, Valid Loss:2.4503
+Epoch: 8, Valid Loss:2.3638
+Epoch: 9, Valid Loss:2.2606
+Epoch: 10, Valid Loss:2.1895
+Epoch: 11, Valid Loss:2.1108
+Epoch: 12, Valid Loss:2.0968
+Epoch: 13, Valid Loss:2.0747
+Epoch: 14, Valid Loss:1.9735
+Epoch: 15, Valid Loss:1.9495
+Epoch: 16, Valid Loss:1.9151
+Epoch: 17, Valid Loss:1.8949
+Epoch: 18, Valid Loss:1.8590
+Epoch: 19, Valid Loss:1.8449
+Epoch: 20, Valid Loss:1.8551
+Epoch: 21, Valid Loss:1.8119
+Epoch: 22, Valid Loss:1.7585
+Epoch: 23, Valid Loss:1.7694
+Epoch: 24, Valid Loss:1.7850
+Epoch: 25, Valid Loss:1.7816
+Epoch: 26, Valid Loss:1.7510
+Epoch: 27, Valid Loss:1.7492
+Epoch: 28, Valid Loss:1.7482
+Epoch: 29, Valid Loss:1.7348
+Epoch: 30, Valid Loss:1.6849
+Epoch: 31, Valid Loss:1.7456
+Epoch: 32, Valid Loss:1.6936
+Epoch: 33, Valid Loss:1.6713
+Epoch: 34, Valid Loss:1.7056
+Epoch: 35, Valid Loss:1.6882
+Epoch: 36, Valid Loss:1.6758
+Epoch: 37, Valid Loss:1.6628
+Epoch: 38, Valid Loss:1.6358
+Epoch: 39, Valid Loss:1.6323
+Epoch: 40, Valid Loss:1.6477
+Epoch: 41, Valid Loss:1.6712
+Epoch: 42, Valid Loss:1.6821
+Epoch: 44, Valid Loss:1.6778
+Epoch: 45, Valid Loss:1.6707
+Epoch: 46, Valid Loss:1.6672
+Epoch: 47, Valid Loss:1.6765
+Epoch: 48, Valid Loss:1.6451
+Epoch: 49, Valid Loss:1.6348
+Epoch: 50, Valid Loss:1.6609
+The f1-score is 0.5126002290950745
+The confusion matrix is
+ [[23079   507]
+ [ 1195   895]]
+
+(4) duration
+python .\main.py Music_Language
+The length of music data is 6037
+The length of language data is 6000
+Experiment 4: Using music data to pretrain and language data to finetune
+Begin to pretrain
+Epoch: 1, Valid Loss:2.7761
+Epoch: 2, Valid Loss:2.3334
+Epoch: 3, Valid Loss:2.2250
+Epoch: 4, Valid Loss:2.1440
+Epoch: 5, Valid Loss:2.0855
+Epoch: 6, Valid Loss:2.0349
+Epoch: 7, Valid Loss:2.0208
+Epoch: 8, Valid Loss:1.9889
+Epoch: 9, Valid Loss:1.9791
+Epoch: 10, Valid Loss:1.9433
+Epoch: 11, Valid Loss:1.9549
+Epoch: 12, Valid Loss:1.9215
+Epoch: 13, Valid Loss:1.9071
+Epoch: 14, Valid Loss:1.8691
+Epoch: 15, Valid Loss:1.8745
+Epoch: 16, Valid Loss:1.8537
+Epoch: 17, Valid Loss:1.8370
+Epoch: 18, Valid Loss:1.8238
+Epoch: 19, Valid Loss:1.8239
+Epoch: 20, Valid Loss:1.8452
+Begin to finetune
+Epoch: 1, Valid Loss:4.0186
+Epoch: 2, Valid Loss:3.3822
+Epoch: 3, Valid Loss:2.9812
+Epoch: 4, Valid Loss:2.6944
+Epoch: 5, Valid Loss:2.5223
+Epoch: 6, Valid Loss:2.3725
+Epoch: 7, Valid Loss:2.2815
+Epoch: 8, Valid Loss:2.1649
+Epoch: 9, Valid Loss:2.0833
+Epoch: 10, Valid Loss:2.0105
+Epoch: 11, Valid Loss:1.9632
+Epoch: 12, Valid Loss:1.9123
+Epoch: 13, Valid Loss:1.8652
+Epoch: 14, Valid Loss:1.8318
+Epoch: 15, Valid Loss:1.8190
+Epoch: 16, Valid Loss:1.7616
+Epoch: 17, Valid Loss:1.7371
+Epoch: 18, Valid Loss:1.7088
+Epoch: 19, Valid Loss:1.7002
+Epoch: 20, Valid Loss:1.6907
+Epoch: 21, Valid Loss:1.6594
+Epoch: 22, Valid Loss:1.6567
+Epoch: 23, Valid Loss:1.6591
+Epoch: 24, Valid Loss:1.6349
+Epoch: 25, Valid Loss:1.6219
+Epoch: 26, Valid Loss:1.6334
+Epoch: 27, Valid Loss:1.6205
+Epoch: 28, Valid Loss:1.6426
+Epoch: 29, Valid Loss:1.6114
+Epoch: 30, Valid Loss:1.5844
+Epoch: 31, Valid Loss:1.6085
+Epoch: 32, Valid Loss:1.5944
+Epoch: 33, Valid Loss:1.5762
+Epoch: 34, Valid Loss:1.5662
+Epoch: 35, Valid Loss:1.5960
+Epoch: 36, Valid Loss:1.5867
+Epoch: 37, Valid Loss:1.5613
+Epoch: 38, Valid Loss:1.5742
+Epoch: 39, Valid Loss:1.5677
+Epoch: 40, Valid Loss:1.5497
+Epoch: 41, Valid Loss:1.5438
+Epoch: 42, Valid Loss:1.5625
+Epoch: 43, Valid Loss:1.5520
+Epoch: 44, Valid Loss:1.5614
+Epoch: 45, Valid Loss:1.5609
+Epoch: 46, Valid Loss:1.5424
+Epoch: 47, Valid Loss:1.5711
+Epoch: 48, Valid Loss:1.5779
+Epoch: 49, Valid Loss:1.5634
+Epoch: 50, Valid Loss:1.5573
+The f1-score is 0.5202446839498981
+The confusion matrix is
+ [[23136   450]
+ [ 1197   893]]
