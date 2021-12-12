@@ -37,4 +37,4 @@ python main.py Language
 
 ## Results
 
-Some output examples are shown in `result_1.txt`.
+The original experimental results of our paper are shown in the `results` folder.
