@@ -37,4 +37,4 @@ python main.py Language
 
 ## Results
 
-The original experimental results of our paper are shown in the `results` folder.
+The original experimental results of our paper are in the `results` folder.
