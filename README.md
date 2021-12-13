@@ -18,7 +18,8 @@ conda activate sentence_segmentation
 pip install sklearn
 pip install nltk
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
-% (if not gpu) conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+# if you do not have a gpu:
+# conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 ```
 
 ## Usage
