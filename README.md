@@ -5,6 +5,8 @@
 We use a single GPU (NVIDIA GeForce MX250) to develop this system with:
 - Anaconda 3 (python 3.7)
 - torch 1.10.0+cu113
+- sklearn
+- nltk 3.6.1
 
 GPU is optinal for running this system.
 
@@ -12,8 +14,11 @@ If you have installed Anaconda 3, you can use the following bash code to create 
 
 ```bash
 conda create -n sentence_segmentation python=3.7
-source activate sentence_segmentation
-TODO
+conda activate sentence_segmentation
+pip install sklearn
+pip install nltk
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+% (if not gpu) conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 ```
 
 ## Usage
