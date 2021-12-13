@@ -1,6 +1,6 @@
 # Sentence Segmentation via Studying Knowledge from Symbolic Music
 
-This is the final project for COMP550: natural language processing at McGill University finished by [Yifan Xie](https://github.com/hrsoup), [Ali Savas](https://github.com/alisavas4) and [Marwan Khan](https://github.com/marw12).
+This is the final project for COMP550: natural language processing at McGill University.
 
 ## Installation
 
