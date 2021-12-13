@@ -45,4 +45,4 @@ python main.py Language
 
 ## Results
 
-The original experimental results of our paper are in the `results` folder.
+The original experimental results of our project are in the `results` folder.
