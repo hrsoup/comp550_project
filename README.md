@@ -19,7 +19,7 @@ pip install sklearn
 pip install nltk
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 # if you do not have a gpu:
-# conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+# conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
 
 ## Usage
