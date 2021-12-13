@@ -10,7 +10,7 @@ We use a single GPU (NVIDIA GeForce MX250) to develop this system with:
 - sklearn
 - nltk 3.6.1
 
-GPU is optinal for running this system.
+GPU is optional for running this system.
 
 If you have installed Anaconda 3, you can use the following bash code to create conda environment and install all the packages needed in this system:
 
