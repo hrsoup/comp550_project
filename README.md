@@ -1,5 +1,7 @@
 # Sentence Segmentation via Studying Knowledge from Symbolic Music
 
+This is the final project for COMP550: natural language processing at McGill University finished by Yifan Xie, Ali Savas and Marwan Khan.
+
 ## Installation
 
 We use a single GPU (NVIDIA GeForce MX250) to develop this system with:
