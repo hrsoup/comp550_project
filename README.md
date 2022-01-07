@@ -1,5 +1,3 @@
-# Sentence Segmentation via Studying Knowledge from Symbolic Music
-
 This is the final project for COMP550: natural language processing at McGill University.
 
 ## Installation
